@@ -62,7 +62,6 @@ public class TrafficAnalysis {
         })
                 //聚合窗口 输出
         .process(new TopNHotUrls(5))
-                //输出
         .print();
 
         env.execute("traffic analysis job");
