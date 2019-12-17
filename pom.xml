@@ -11,6 +11,8 @@
     <modules>
         <module>HotItemsAnalysis</module>
         <module>NetworkTrafficAnalysis</module>
+        <module>LoginFailDetect</module>
+        <module>OrderTimeoutDetect</module>
     </modules>
     <properties>
         <flink.version>1.9.1</flink.version>
@@ -74,7 +76,7 @@
                             </filters>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>topN</mainClass>
+                                    <mainClass>UserBehaviorAnalysis</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
