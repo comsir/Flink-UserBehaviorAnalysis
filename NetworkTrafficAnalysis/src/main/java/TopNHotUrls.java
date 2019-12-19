@@ -75,7 +75,6 @@ public class TopNHotUrls extends KeyedProcessFunction<Long, UrlViewCount, String
                     .append("  Url=").append(cur.getUrl())
                     .append("  流量=").append(cur.getCount()).append("\n");
         }
-
         result.append("=====================\n\n");
         Thread.sleep(1000);
         out.collect(result.toString());
